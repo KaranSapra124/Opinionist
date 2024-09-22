@@ -8,6 +8,8 @@ const uploadedFile = async (cloudinaryUrl) => {
       "https://api.assemblyai.com/v2/transcript",
       {
         audio_url: cloudinaryUrl, // Using the Cloudinary URL
+        language_detection: true,
+        punctuate:false
       },
       {
         headers: {
